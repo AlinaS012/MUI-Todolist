@@ -29,7 +29,6 @@ const TodoList = ({ textList }) => {
             (item) => <Todo text={item} />
         )}
     </Stack>
-        {/**/}
         <AddTask sx={{
             width: {
                 xs: '90%', md: '90%', lg: '90%'//lg: '75%' 
@@ -38,7 +37,6 @@ const TodoList = ({ textList }) => {
             gap: '1.5rem', alignItems: 'center', mb: 1
         }}
         />
-        {/**/}
     </>)
 }
 

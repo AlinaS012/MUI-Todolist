@@ -14,8 +14,7 @@ import IconifyIcon from '../../../components/base/IconifyIcon';
 //   flag: string;
 // }
 
-const languages//: Language[] 
-  = [
+const languages = [
     {
       id: 1,
       code: 'eng',

@@ -10,15 +10,14 @@ import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import IconifyIcon from '../../../components/base/IconifyIcon';
-// import Profile from 'assets/images/Profile.png';
 
-interface MenuItems {
-  id: number;
-  title: string;
-  icon: string;
-}
+// interface MenuItems {
+//   id: number;
+//   title: string;
+//   icon: string;
+// }
 
-const menuItems: MenuItems[] = [
+const menuItems = [
   {
     id: 1,
     title: 'View Profile',

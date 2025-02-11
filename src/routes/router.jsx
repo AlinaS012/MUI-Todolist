@@ -1,4 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
 import { Suspense, lazy } from 'react';
 import { Outlet, createBrowserRouter } from 'react-router-dom';
 import Splash from '../components/loader/Splash';
@@ -12,84 +11,9 @@ const MainLayout = lazy(() => import('../layouts/main-layout'));
 const Dashboard = lazy(() => import('../pages/dashboard'));
 const Error404 = lazy(() => import('../pages/errors/Error404'));
 
-// const routes = [
-//   {
-//     element: (
-//       <Suspense fallback={<Splash />}>
-//         <App />
-//       </Suspense>
-//     ),
-//     children: [
-//       {
-//         path: '/',
-//         element: (
-//           <MainLayout>
-//             <Suspense fallback={<PageLoader />}>
-//               <Outlet />
-//             </Suspense>
-//            </MainLayout>
-//         ),
-//         children: [
-//           {
-//             index: true,
-//             element: <Dashboard />,
-//           },
-//         ],
-//       },
-//       // {
-//       //   path: '/',
-//       //   element: (
-//       //       <Suspense fallback={<PageLoader />}>
-//       //         <Outlet />
-//       //       </Suspense>
-//       //   ),
-//       //   children: [
-//       //     {
-//       //       index: true,
-//       //       element: <Dashboard />,
-//       //     },
-//       //   ],
-//       // },
-//       // {
-//       //   path: rootPaths.authRoot,
-//       //   element: (
-//       //     <Suspense fallback={<Splash />}>
-//       //       <Outlet />
-//       //     </Suspense>
-//       //   ),
-//       //   children: [
-//       //     {
-//       //       path: paths.signin,
-//       //       element: (
-//       //         <AuthLayout>
-//       //           <SignIn />
-//       //         </AuthLayout>
-//       //       ),
-//       //     },
-//       //     {
-//       //       path: paths.signup,
-//       //       element: (
-//       //         <AuthLayout>
-//       //           <SignUp />
-//       //         </AuthLayout>
-//       //       ),
-//       //     },
-//       //     // {
-//       //     //   path: paths.resetPassword,
-//       //     //   element: <ResetPassword />,
-//       //     // },
-//       //   ],
-//       // },
-//       {
-//         path: '*',
-//         element: <Error404 />,
-//       },
-//     ],
-//   },
-// ];
 const routes = [
   {
-    path: '/', // Define the root path explicitly
+    path: '/', 
     element: (
       <Suspense fallback={<Splash />}>
         <App />
@@ -106,7 +30,7 @@ const routes = [
         ),
         children: [
           {
-            index: true, // Ensures this is the default route
+            index: true, 
             element: <Dashboard />,
           },
         ],

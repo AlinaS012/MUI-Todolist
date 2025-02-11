@@ -1,7 +1,7 @@
 import { Theme } from '@mui/material';
 import { Components } from '@mui/material/styles/components';
 
-const Drawer: Components<Omit<Theme, 'components'>>['MuiDrawer'] = {
+const Drawer = {
   styleOverrides: {
     root: {
       '&:hover, &:focus': {

@@ -1,6 +1,9 @@
 import {
-    Box, Checkbox, Modal, Stack,
-    Typography, //Typography 
+    Box, 
+    Checkbox, 
+    Modal, 
+    Stack,
+    Typography,  
 } from "@mui/material";
 import React from "react";
 import IconifyIcon from "../base/IconifyIcon";

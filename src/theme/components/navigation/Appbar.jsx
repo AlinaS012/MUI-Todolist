@@ -1,7 +1,7 @@
 import { Theme } from '@mui/material';
 import { Components } from '@mui/material/styles/components';
 
-const AppBar: Components<Omit<Theme, 'components'>>['MuiAppBar'] = {
+const AppBar = {
   styleOverrides: {
     root: ({ theme }) => ({
       padding: 0,
